@@ -11,7 +11,7 @@ vector<int> twoSum(vector<int>& nums, int target) {
 
         // If that number is in our hash map, return the current number and the difference
         if (seen.find(diff) != seen.end()) {
-            return vector {seen[diff], nums[i]};
+            return vector {seen[diff], i};
         }
 
         seen[nums[i]] = i; // Else, just add the current number to our seen hash map
